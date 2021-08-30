@@ -1,0 +1,262 @@
+@media (max-width: 992px) {
+.swiper-pagination-bullet{
+    margin: 18px 0 !important;
+    width: 18px;
+    height: 18px;
+}
+.swiper-pagination{
+    margin-right: 20px;
+}
+.banner-text p{
+    font-size: 1.1rem;
+}
+
+/* Second slide medium media query */
+#box2 {
+    margin: 12rem 0;
+}
+#box2 p {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+#box {
+    width: 100%;
+    margin: 12rem 0;
+}
+.cont1 {
+    width: 100%;
+    height: 14rem;
+}
+#click {
+    width: 80px; 
+    height: 80px;
+    top: 25%;
+    left: 37%;
+}
+#box3 {
+    /* height: 2rem;
+    width: 2rem; */
+    margin: 14px 22px;
+}
+#boxb {
+    width: 100%;
+}
+/* Third slide medium media query */
+}
+.cont3 {
+    font-size: 0.9rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.cont4 {
+    font-size: 0.9rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.cont5 {
+    font-size: 0.9rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.boxx {
+    margin-left: 0.5rem;
+}
+.boxx h3{
+    font-size: 1.4rem;
+    letter-spacing: 1;
+    padding-bottom: 15px;
+}
+.boxx p {
+    align-items: left;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .banner-text .slidepic {
+        display: none;
+    }
+    .banner-btn a{
+        padding: 8px 10px;
+    }
+    .text-area {
+        font-size: 2rem;
+    }
+    .banner-text p{
+        font-size: 1rem;
+    }
+    .swiper-pagination-bullet{
+        margin: 15px 0 !important;
+        width: 15px;
+        height: 15px;
+    }
+    .swiper-pagination{
+        margin-right: 10px;
+    }
+    /* Second slide small media query */
+    #box2 {
+        height: 15rem;
+        transform: translateY(30px);
+    }
+    #box2 p {
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+    #box {
+        width: 95%;
+        height: 8rem;
+        margin: 4rem 0;
+        padding-left: 2rem;
+        display: flex;
+        position: relative;
+        transform: translateY(-180px);
+    }
+    .cont1 {
+        width: 100%;
+        height: 12rem;
+    }
+    #click {
+        width: 80px; 
+        height: 80px;
+        top: 43%;
+        left: 45.5%;
+    }
+    #box3 {
+        /* height: 2rem;
+        width: 2rem; */
+        margin: 15px 22px;
+    }
+    #boxb {
+        width: 100%;
+        /* padding-top: 100px; */
+        transform: translateY(160px);
+    }
+    /* Third slide small media query */
+    #boxb {
+        width: 100%;
+        /* padding-top: 100px; */
+        transform: translateY(160px);
+    }
+    .cont3 {
+        font-size: 0.6rem;
+        height: 4rem;
+        padding-top: 0.5rem;
+    }
+    .cont4 {
+        font-size: 0.6rem;
+        height: 4rem;
+        padding-top: 0.5rem;
+    }
+    .cont5 {
+        font-size: 0.6rem;
+        height: 4rem;
+        padding-top: 0.5rem;
+    }
+    .boxx {
+        margin-left: 0.5rem;
+        transform: translateY(50px);
+    }
+    .boxx h3{
+        font-size: 1.5rem;
+        letter-spacing: 1;
+        padding-bottom: 15px;
+    }
+    .boxx p {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    /* Login page */
+    .container1{
+        min-height: 800px;
+        height: 100vh;
+    }
+    .container1::before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 68%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out;
+    } 
+    .signin-signup{
+        width: 100%;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%,-100%);
+        transition: 1s 0.8s ease-in-out;
+    }
+    .container1.sign-up-mode:before{
+        transform: translate(-50%,100%);
+        bottom: 32%;
+        right: initial;
+    }
+    .panels-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    .panel{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5rem 8%;
+    }
+    .panel .content{
+        padding-right: 15%;
+        transition: 0.9s 0.8s ease-in-out;
+    }
+    .panel h3{
+        font-size: 1.2rem;
+    }
+    .panel p{
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }
+    .btn.transparent{
+        width: 110px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    .image{
+        width: 200px;
+        transition: 0.9s 0.6s ease-in-out;
+    }
+    .left-panel{
+        grid-row: 1 /2;
+    }
+    .right-panel{
+        grid-row: 3 / 4;
+    }
+    .right-panel .content, .right-panel .image{
+        transform: translateY(300px);
+    }
+    .container1.sign-up-mode .left-panel .content, 
+    .container1.sign-up-mode .left-panel .image{
+        transform: translateY(-300px);}
+    .container1.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%,0);
+        left: 50%;
+    } 
+
+}
+@media(max-width:570px){
+    form{
+        padding: 0 1.5rem;
+    }
+    .image{
+        display: none;
+    }
+    .panel .content{
+        padding: 0.5rem 1rem;
+    }
+    .container1::before{
+        bottom: 72%;
+        left: 50%;
+    }
+    .container1.sign-up-mode::before{
+        bottom: 28%;
+        left: 50%;
+    }
+}

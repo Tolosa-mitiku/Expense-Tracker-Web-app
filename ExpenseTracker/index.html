@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center" href="#">
+                <i class="fas fa-dollar-sign fa-2x" style="padding-right: 1rem;"></i>
+                Expense Tracker
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item line">
+                        <a class=" nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-current="page"
+                            href="#">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- slider -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="banner-text">
+                                <div class="text-area">
+                                    <span>E</span>
+                                    <span>x</span>
+                                    <span>p</span>
+                                    <span>e</span>
+                                    <span>n</span>
+                                    <span>s</span>
+                                    <span>e</span>
+                                </div>
+                                <p class="leftfade1">Track your finances to know where your money is going. Expense
+                                    Tracker is an online money management tool designed to keep track of all your
+                                    expenses and incomes. Receive reminders to your phone or email when your bills are
+                                    due. Get started for Free!</p>
+
+                                <div class="slidepic">
+                                    <img src="./assets/images/money2.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div id="box2">
+                                <h3>Effortlessly stay on track of your expenses</h3>
+                                <p id="p1"><i class="fas fa-check"></i>See all of your expenses in one place.</p>
+                                <p id="p2"><i class="fas fa-check"></i>Have a perfect control over all your cash
+                                    expenses.</p>
+                                <p id="p3"><i class="fas fa-check"></i>Add all your expenses manually by yourself.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div id="box" class="justify-content-center">
+                                <div class="cont1">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jSv7DUqZ3pk"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div id="click">
+                                    <div id="box3">
+                                        <i class="fas fa-play fa-3x" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="boxb" class="justify-content-center">
+                                <div class="cont3 cont">
+                                    <div class="card w-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="color: #2FA38F;">Simple money tracker</h5>
+                                            <p class="card-text">It takes seconds to record daily transactions. Put them
+                                                into clear and visualized categories such as Expense: Food, Shopping or
+                                                Income: Salary, Gift.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cont4 cont">
+                                    <div class="card w-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="color:#F66EB1;">Painless Budgeting</h5>
+                                            <p class="card-text">Set budgets that are easy to stick to, based on your
+                                                own spending habits. You’re one step closer to that stuff you want to
+                                                buy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cont5 cont">
+                                    <div class="card w-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="color:#26C0FA;">The whole picture in one place
+                                            </h5>
+                                            <p class="card-text">One report to give a clear view on your spending
+                                                patterns. Understand where your money comes and goes with easy-to-read
+                                                graphs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="boxx boxx1">
+                                <h3 style="color: #2FA38F;">Spend smarter
+                                    and save more</h3>
+                                <p>Personalized Mintsights™ make your money go
+                                    further. We’ll automatically find savings you missed.</p>
+                            </div>
+                            <div class="boxx boxx2 boxy">
+                                <h3 style="color:#F66EB1;">Stay focused on
+                                    your financial goals</h3>
+                                <p>Improve your spending habits with custom
+                                    goals that keep you going. Save for a home,
+                                    crush debt, and prepare for the future.</p>
+                            </div>
+                            <div class="boxx boxx3 boxy">
+                                <h3 style="color:#26C0FA;">Put an end to
+                                    late fees</h3>
+                                <p>Don’t pay more than you need to. We’ll track
+                                    bills to help make sure you never miss a due
+                                    date. Plus, get overdraft protection alerts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cards1 cards11">
+                                <div class="sacko">
+                                    <i class="fas fa-chart-pie fa-3x"></i>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Budget planner</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Say goodbye to spreadsheets with
+                                            customizable budgets. Easily add and update your categories.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cards1 cards12">
+                                <div class="sacko" style="background-color: #F66EB1;">
+                                    <i class="fas fa-shield-alt fa-3x"></i>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Your finances, safe and secure</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Our top priority is keeping your data
+                                            secure. With multiple safety measures, like secure 256-bit encryption and
+                                            multi-factor authentication, we protect your info like it's our own.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cards1 cards13">
+                                <div class="sacko" style="background-color: #26C0FA;">
+                                    <i class="far fa-list-alt fa-3x"></i>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Track your spending</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Stay on top of your finances by seeing
+                                            where your money comes and goes.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide5">
+                <br><br><br>
+                <div class="container popups">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card card1" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">On the go expense submission</h5>
+                                    <p class="card-text mb-2 text-muted">The ability to submit expenses on the go allows
+                                        your to do so immediately. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">Access anywhere, anytime</h5>
+                                    <p class="card-text mb-2 text-muted">You can submit, approve and access expense
+                                        reports at any time, from anywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">No more data loss</h5>
+                                    <p class="card-text mb-2 text-muted">The risk of damaging or losing receipts is
+                                        increased during business trips. And this will be no worry any more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card card4" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">Real time approval and notifications</h5>
+                                    <p class="card-text mb-2 text-muted">Notifications help positively influence user
+                                        behaviour and keep track of possibly suspicious activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card5" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">Better spending awareness</h5>
+                                    <p class="card-text mb-2 text-muted">It provides you with business insights on which
+                                        you can make data-driven decisions. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card6" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="circular">
+
+                                    </div>
+                                    <h5 class="card-title">better budget</h5>
+                                    <p class="card-text mb-2 text-muted">If you've tracked your spending and have an
+                                        idea where your money is going, you can make sustainable cuts in desired areas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide5">
+                <div class="wrapper">
+                    <div class="cards">
+                        <div class="content">
+                            <div class="img"><img src="./assets/images/pexels-david-mcbee-730564.jpg" alt="abeni photo">
+                            </div>
+                            <div class="details">
+                                <span class="name">Abenezer Fekadu</span>
+                                <p>web Designer</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none">Follow</a>
+                    </div>
+                    <div class="cards">
+                        <div class="content">
+                            <div class="img"><img src="./assets/images/pexels-david-mcbee-730564.jpg" alt="abeni photo">
+                            </div>
+                            <div class="details">
+                                <span class="name">Tolosa Mitiku</span>
+                                <p>web Designer</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none">Follow</a>
+                    </div>
+                    <div class="cards">
+                        <div class="content">
+                            <div class="img"><img src="./assets/images/pexels-david-mcbee-730564.jpg" alt="abeni photo">
+                            </div>
+                            <div class="details">
+                                <span class="name">Biruk Ayalew</span>
+                                <p>web Designer</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none">Follow</a>
+                    </div>
+                    <div class="cards">
+                        <div class="content">
+                            <div class="img"><img src="./assets/images/pexels-david-mcbee-730564.jpg" alt="abeni photo">
+                            </div>
+                            <div class="details">
+                                <span class="name">Mekides Bishaw</span>
+                                <p>web Designer</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none">Follow</a>
+                    </div>
+                    <div class="cards">
+                        <div class="content">
+                            <div class="img"><img src="./assets/images/pexels-david-mcbee-730564.jpg" alt="abeni photo">
+                            </div>
+                            <div class="details">
+                                <span class="name">Tolosa Mitiku</span>
+                                <p>web Designer</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none">Follow</a>
+                    </div>
+                </div>
+                <footer>
+                    <div class="main">
+                        <div class="contents">
+                            <section>
+                                <header>
+                                    Company
+                                </header>
+                                <a href="#">About Us</a>
+                                <a href="#">Contact</a>
+                            </section>
+                            <section>
+                                <header>
+                                    Developers
+                                </header>
+                                <a href="#">About Us</a>
+                                <a href="#">Contact</a>
+                            </section>
+                            <section>
+                                <header>
+                                    Weekly Newsletter
+                                </header>
+                                <a href="#">About Us</a>
+                                <a href="#">Contact</a>
+                            </section>
+                        </div>
+                        <div class="copyrights">
+                            Copyright Protected. &copy;
+                            <strong>Titans</strong>
+                        </div>
+                    </div>
+                </footer>
+                <br><br><br><br><br>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="container1">
+                        <div class="forms-container">
+                            <div class="signin-signup">
+                                <form action="" class="sign-in-form">
+                                    <h2 class="title">Sign in</h2>
+                                    <div class="input-field" id="p">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" placeholder="Username" id="loginUserName">
+                                    </div>
+                                    <div id="error_message4"></div>
+                                    <div class="input-field">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" placeholder="Password" id="loginPassword">
+                                    </div>
+                                    <div id="error_message5"></div>
+                                    <a class="btn solid" id="login" role="button">Login</a>
+                                    <p class="social-text">Or Sign in with social platforms</p>
+                                    <div class="social-media">
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </form>
+                                <form action="" class="sign-up-form">
+                                    <h2 class="title">Sign up</h2>
+                                    <div class="input-field">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" placeholder="Username" id="signupUserName">
+                                    </div>
+                                    <div id="error_message"></div>
+                                    <div class="input-field">
+                                        <i class="fa fa-file-invoice-dollar"></i>
+                                        <input type="text" placeholder="Your Account" id="account">
+                                    </div>
+                                    <div id="error_message2"></div>
+                                    <div class="input-field">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" placeholder="Password" id="password">
+                                    </div>
+                                    <div id="error_message3"></div>
+                                    <Button type="button" class="btn solid" id="signup">Sign Up</Button>
+                                    <p class="social-text">Or Sign up with social platforms</p>
+                                    <div class="social-media">
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                        <a href="#" class="social-icon">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panels-container">
+                            <div class="panel left-panel">
+                                <div class="content">
+                                    <h3>New here ?</h3>
+                                    <p>If you are a new user, sign up with a new account</p>
+                                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                                </div>
+                                <img src="assets/images/wallet.svg" alt="Image" class="image">
+                            </div>
+                            <div class="panel right-panel">
+                                <div class="content">
+                                    <h3>One of us ?</h3>
+                                    <p>If you already have an account, sign in and enjoy our next level website</p>
+                                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                                </div>
+                                <img src="assets/images/money2.svg" alt="Image" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal2">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jSv7DUqZ3pk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/afec0393a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js"></script>
+
+    <!-- <script type="module" src="./assets/js/module.js"></script> -->
+    <script type="module" src="./assets/js/indexDB.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>

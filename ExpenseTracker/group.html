@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <title>GroupTracker</title>
+</head>
+<body>
+    <div class="container-fluid container-whole">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="togglesidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a href="#">Group Page</a>
+            </div>
+        </nav>
+
+        <main class="container-fluid px-3 pt-3">
+            <div class="container blockcategory">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control groupCategory1" placeholder="Category" aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="col-sm col-lg"></div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control total1" placeholder="Total" aria-label="Username">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container records1">
+                    <div class="row">
+                        <div class="col-1">NO</div>
+                        <div class="col-5">Team Members</div>
+                        <div class="col-3">Expected Payment</div>
+                        <div class="col-3">Payment Status</div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-0 col-lg-6">
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <button type="button" class="btn btn-success grouprecordviewer">View Record</button>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <button type="button" class="btn btn-success grouprecordsaver">Save Record</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container blockcategory2 blocka">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    
+                </div>
+                <br>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1"><i class="fas fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;Create Record</button>
+                </div>
+
+                <br><br><br><br><br><br><br><br>
+            </div>
+
+        </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="container blockcategory">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control groupCategory2" placeholder="Category" aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control total2" placeholder="Total" aria-label="Username">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container records2">
+                    <div class="row">
+                        <div class="col">NO</div>
+                        <div class="col">Team Members</div>
+                        <div class="col">Expected Payment</div>
+                        <div class="col">Payment Status</div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <div class="col-3">
+                <button type="button" class="btn btn-success grouprecordsaver2" data-bs-dismiss="modal">Save Record</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="assets/images/dollar.png" alt="">
+                </div>
+                <i class="fa fa-lines" id="sidebaricon" onclick="closeSidebar"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fas fa-chart-pie fa"></i>
+                    <a href="#">EXPENSEBOARD</a>
+                </div>
+                <!-- <button>EXPENSES</button> -->
+                <h2><a href="#" class="click4">GROUP</a></h2>
+                <div class="main_container">
+                </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://kit.fontawesome.com/afec0393a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/group.js"></script>
+    <script type="module" src="./assets/js/module.js"></script>
+
+</body>
+</html>

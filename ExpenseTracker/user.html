@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="container-fluid container-whole">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="togglesidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a href="#">Expense Page</a>
+            </div>
+        </nav>
+        <!-- Central content -->
+        <main class="container-fluid px-3 pt-3">
+            <div class="block1">
+                <div class="container-fluid new-entry">
+                    <div class="entry-title">
+                        NEW ENTRY
+                    </div>
+                    <div class="entry-list container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control category1" placeholder="Category"
+                                            aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control expense_type1" placeholder="Expense Type"
+                                            aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-outline-secondary minus1" type="button">-</button>
+                                        <button class="btn btn-outline-secondary plus1" type="button">+</button>
+                                        <input type="text" class="form-control amount1" placeholder="Amount"
+                                            aria-label="Example text with two button addons">
+                                        <button class="btn btn-outline-secondary" type="button">Birr</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3 col-3">
+                                        <input type="date" class="form-control date1"
+                                            aria-label="Dollar amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3 col-3">
+                                        <input type="time" class="form-control time1"
+                                            aria-label="Dollar amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <button type="button" class="btn btn-danger button1">Create Expense Entry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="main_container">
+                    <div class="accordion accordion-flush wrapExpense" id="accordionFlushExample">
+                    </div>
+                </div>
+            </div>
+
+            <div class="block2 blocka">
+                <div class="container-fluid new-entry">
+                    <div class="entry-title">
+                        NEW ENTRY
+                    </div>
+                    <div class="entry-list container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control category2" placeholder="Category"
+                                            aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control income_type2" placeholder="Income Type"
+                                            aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-outline-secondary minus2" type="button">-</button>
+                                        <button class="btn btn-outline-secondary plus2" type="button">+</button>
+                                        <input type="text" class="form-control amount2" placeholder="Amount"
+                                            aria-label="Example text with two button addons">
+                                        <button class="btn btn-outline-secondary" type="button">Birr</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3 col-3">
+                                        <input type="date" class="form-control date2"
+                                            aria-label="Dollar amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="input-group mb-3 col-3">
+                                        <input type="time" class="form-control time2"
+                                            aria-label="Dollar amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <button type="button" class="btn btn-success button2">Create Income Entry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="main_container">
+                    <div class="accordion accordion-flush wrapIncome" id="accordionFlushExample"></div>
+                </div>
+            </div>
+
+            <div class="block3 blocka">
+                <div class="container-fluid new-entry">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9 statblock1">
+                                <div class="container tab">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <a href="#" class="tab1">Daily</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" class="tab2">Weekly</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" class="tab3">Monthly</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-list container stat1">
+                                    <div id="chart1" style="height:500px;width:500px;">
+                                        <div class="innerCont1" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-list container stat2 blocka">
+                                    <div id="chart2" style="height:500px;width:500px;">
+                                        <div class="innerCont2" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="entry-list container stat3 blocka">
+                                    <div id="chart3" style="height:500px;width:500px;">
+                                        <div class="innerCont3" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col-9 statblock2 blocka">
+                                <div class="container tab">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <a href="#" class="tab4">Daily</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" class="tab5">Weekly</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#" class="tab6">Monthly</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-list container stat4">
+                                    <div id="chart4" style="height:500px;width:500px;">
+                                        <div class="innerCont4" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-list container stat5 blocka">
+                                    <div id="chart5" style="height:500px;width:500px;">
+                                        <div class="innerCont5" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="entry-list container stat6 blocka">
+                                    <div id="chart6" style="height:500px;width:500px;">
+                                        <div class="innerCont6" style="overflow: auto; top:0px; left: 0px; height:100% ; Width:100% ;overflow: hidden;">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col-3 expincswap justify-content-left">
+                                <div class="row"><a href="#" class="expswap">Expense</a></div>
+                                <div class="row"><a href="#" class="incswap">Income</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block4 blocka">
+                <div class="container-fluid new-entry">
+                    <div class="entry-title">
+                        CREATE GROUP
+                    </div>
+                    <br>
+                    <div class="entry-list container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control groupName" placeholder="Group Name" aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control member1" placeholder="Team Members" aria-label="Example text with two button addons">
+                                        <button class="btn btn-outline-secondary add1" type="button">Add</button>
+                                    </div>
+                                    <ul class="list-group members1">
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-0 col-lg-6">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <button type="button" class="btn btn-success group" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create Group</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br><br>
+                <div class="container-fluid new-entry">
+                    <div class="entry-title">
+                        CREATE IKUB
+                    </div>
+                    <br>
+                    <div class="entry-list container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control ikubName" placeholder="Ikub Name" aria-label="Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control member2" placeholder="Team Members" aria-label="Example text with two button addons">
+                                        <button class="btn btn-outline-secondary add2" type="button">Add</button>
+                                    </div>
+                                    <ul class="list-group members2">
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6" style="display: flex; padding-bottom: 1rem;">
+                                        <label for="inputdate" class="col-3 col-form-label">Begin Date:</label>
+                                        <div class="col-9">
+                                            <input type="date" class="form-control begindate" id="inputdate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary minus3" type="button">-</button>
+                                            <button class="btn btn-outline-secondary plus3" type="button">+</button>
+                                            <input type="text" class="form-control days1" placeholder="Day Intervals" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">Days</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary minus4" type="button">-</button>
+                                            <button class="btn btn-outline-secondary plus4" type="button">+</button>
+                                            <input type="text" class="form-control amntperrnd" placeholder="Amount Per Round" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">Birr</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-6">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary minus5" type="button">-</button>
+                                            <button class="btn btn-outline-secondary plus5" type="button">+</button>
+                                            <input type="text" class="form-control pnshmntfee" placeholder="Punishment Fee" aria-label="Example text with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">Birr</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-0 col-lg-6">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <button type="button" class="btn btn-success ikub" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create IKUB</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <!-- SideBar -->
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="assets/images/dollar.png" alt="">
+                </div>
+                <i class="fa fa-lines" id="sidebaricon" onclick="closesidebar"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fas fa-chart-pie fa"></i>
+                    <a href="#">EXPENSEBOARD</a>
+                </div>
+                <!-- <button>EXPENSES</button> -->
+                <h2><a href="#" class="click1">EXPENSES</a></h2>
+                <h2><a href="#" class="click2">INCOMES</a></h2>
+                <h2><a href="#" class="click3">STATISTICS</a></h2>
+                <h2><a href="#" class="click4">GROUP</a></h2>
+                <div class="main_container"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://kit.fontawesome.com/afec0393a3.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v2.min.js"></script>
+    <script type="module" src="./assets/js/userapp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/dexie.js"></script>
+    <script type="module" src="./assets/js/module.js"></script>
+
+</body>
+
+</html>
